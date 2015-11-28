@@ -17,4 +17,4 @@ before_script:
             fi"
   - phpize
 
-script: ./configure && make && NO_INTERACTION=1 REPORT_EXIT_STATUS=1 TEST_PHP_DETAILED=1 make test
+script: ./configure && make && NO_INTERACTION=1 REPORT_EXIT_STATUS=1 make test TEST_PHP_ARGS='--show-diff'
